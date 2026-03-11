@@ -1,0 +1,17 @@
+{
+  "name": "cycloid-dt",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Dan Danowski <dan.danowski@cycloid.io>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sd:clean": "npx style-dictionary clean",
+    "sd:build": "node sd-tokens.build.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.3.3",
+    "@tokens-studio/sd-transforms": "^2.0.3"
+  }
+}

@@ -1,0 +1,890 @@
+{
+    "core": {
+        "color": {
+            "ui": {
+                "primary": {
+                    "100": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.ui.primary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "secondary": {
+                    "100": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.ui.secondary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tertiary": {
+                    "100": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.ui.tertiary}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "neutral": {
+                    "100": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.ui.neutral}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "feedback": {
+                "success": {
+                    "100": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.feedback.success}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "warning": {
+                    "100": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.feedback.warning}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "100": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.feedback.error}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                },
+                "info": {
+                    "100": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "300": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color"
+                    },
+                    "600": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.1",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "700": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.2",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "800": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.3",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    },
+                    "900": {
+                        "$value": "{seed.color.feedback.info}",
+                        "$type": "color",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "0.4",
+                                    "space": "lch"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
