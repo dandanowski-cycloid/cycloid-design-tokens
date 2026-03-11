@@ -15,4 +15,4 @@ Platform specific builds
 ```bash
 npm run sd:build:web
 npm run sc:build:figma
-```ß
+```
