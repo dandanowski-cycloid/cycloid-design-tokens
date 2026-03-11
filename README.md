@@ -1,15 +1,12 @@
-# Basic Style Dictionary
+# Cycloid Design Tokens
 
-This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:
 
+To clean build directory of all generated output
 ```bash
-npx style-dictionary build
+npm run sd:clean
 ```
 
-Otherwise, install Style Dictionary locally for this project first, `cd` into this directory and run:
-
+To build all design tokens
 ```bash
-npm init -y && npm install style-dictionary
+npm run sd:build
 ```
-
-and then run the above command.
