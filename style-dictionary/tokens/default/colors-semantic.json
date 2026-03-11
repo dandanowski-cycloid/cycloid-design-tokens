@@ -5,7 +5,7 @@
             "foreground": {
                 "main": {
                     "$value": "{core.color.ui.primary.500}",
-                    "$description": "The default color"
+                    "$description": "The default color used for text"
                 },
                 "subtle": {
                     "$value": "{core.color.ui.primary.700}"

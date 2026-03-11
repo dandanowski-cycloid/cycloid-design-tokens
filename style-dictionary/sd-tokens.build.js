@@ -34,15 +34,27 @@ const buildTheme = async (theme) => {
                 buildPath: `build/web/${theme}/`,
                 files: [
                     {
-                        destination: 'variables.css',
+                        destination: 'vars-core.css',
                         format: 'css/variables',
-                        filter: (token) => !['seed', 'core'].includes(token.path[0]),
+                        filter: (token) => ['core'].includes(token.path[0]),
                         options: { outputReferences: false }
                     },
                     {
-                        destination: '_variables.scss',
+                        destination: 'vars-semantic.css',
+                        format: 'css/variables',
+                        filter: (token) => ['semantic'].includes(token.path[0]),
+                        options: { outputReferences: false }
+                    },
+                    {
+                        destination: '_vars-core.scss',
                         format: 'scss/variables',
-                        filter: (token) => !['seed', 'core'].includes(token.path[0]),
+                        filter: (token) => ['core'].includes(token.path[0]),
+                        options: { outputReferences: false }
+                    },
+                    {
+                        destination: '_vars-semantic.scss',
+                        format: 'scss/variables',
+                        filter: (token) => ['semantic'].includes(token.path[0]),
                         options: { outputReferences: false }
                     }
                 ]
