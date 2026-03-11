@@ -11,59 +11,63 @@ StyleDictionary.registerFormat({
     format: figmaVariablesFormat
 });
 
-const sd = new StyleDictionary({
-    source: ['style-dictionary/tokens/**/*.json'],
-    preprocessors: ['tokens-studio'],
-    platforms: {
-        web: {
-            transforms: [
-                'ts/descriptionToComment',
-                'ts/size/px',
-                'ts/color/modifiers',
-                'name/kebab'
-            ],
-            buildPath: 'build/',
-            files: [
-                {
-                    destination: 'css/variables.css',
-                    format: 'css/variables',
-                    filter: (token) => !['seed', 'core'].includes(token.path[0]),
-                    options: { outputReferences: false }
-                },
-                {
-                    destination: 'scss/_variables.scss',
-                    format: 'scss/variables',
-                    filter: (token) => !['seed', 'core'].includes(token.path[0]),
-                    options: { outputReferences: false }
-                }
-            ]
-        },
-        figma: {
-            transforms: [
-                'ts/descriptionToComment',
-                'ts/size/px',
-                'ts/color/modifiers',
-                'name/kebab'
-            ],
-            buildPath: 'build/figma/',
-            files: [
-                {
-                    destination: 'cycloid/Light.tokens.json',
-                    format: 'json/figma-variables'
-                }
-            ]
+// Define your themes
+const themes = ['cycloid', 'cycloid-dark'];
+
+const buildTheme = async (theme) => {
+    console.log(`\n🎨 Building Theme: ${theme}`);
+
+    const sd = new StyleDictionary({
+        source: [
+            `style-dictionary/tokens/themes/${theme}/**/*.json`,
+            'style-dictionary/tokens/default/**/*.json',
+        ],
+        preprocessors: ['tokens-studio'],
+        platforms: {
+            web: {
+                transforms: [
+                    'ts/descriptionToComment',
+                    'ts/size/px',
+                    'ts/color/modifiers',
+                    'name/kebab'
+                ],
+                buildPath: `build/web/${theme}/`,
+                files: [
+                    {
+                        destination: 'variables.css',
+                        format: 'css/variables',
+                        filter: (token) => !['seed', 'core'].includes(token.path[0]),
+                        options: { outputReferences: false }
+                    },
+                    {
+                        destination: '_variables.scss',
+                        format: 'scss/variables',
+                        filter: (token) => !['seed', 'core'].includes(token.path[0]),
+                        options: { outputReferences: false }
+                    }
+                ]
+            },
+            figma: {
+                transforms: [
+                    'ts/descriptionToComment',
+                    'ts/size/px',
+                    'ts/color/modifiers',
+                    'name/kebab'
+                ],
+                buildPath: 'build/figma/',
+                files: [
+                    {
+                        destination: `${theme}.tokens.json`,
+                        format: 'json/figma-variables'
+                    }
+                ]
+            }
         }
-    }
-});
-
-// Get the platform from the command line argument (e.g., node build.js figma)
-const args = process.argv.slice(2);
-const targetPlatform = args[0];
-
-if (targetPlatform) {
-    console.log(`\nStarting build for: ${targetPlatform}...`);
-    await sd.buildPlatform(targetPlatform);
-} else {
-    console.log('\nNo platform specified, building all...');
+    });
     await sd.buildAllPlatforms();
+}
+
+// Run the loop
+for (const theme of themes) {
+    await buildTheme(theme);
 }

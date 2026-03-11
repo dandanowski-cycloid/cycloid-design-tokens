@@ -4,7 +4,8 @@
             "$type": "color",
             "foreground": {
                 "main": {
-                    "$value": "{core.color.ui.primary.500}"
+                    "$value": "{core.color.ui.primary.500}",
+                    "$description": "The default color"
                 },
                 "subtle": {
                     "$value": "{core.color.ui.primary.700}"

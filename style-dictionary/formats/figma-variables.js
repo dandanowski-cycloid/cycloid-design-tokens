@@ -19,6 +19,7 @@ export const figmaVariablesFormat = async ({ dictionary }) => {
 
             return {
                 "$type": "color",
+                "$description": token.$description || token.description || "",
                 "$value": {
                     "colorSpace": "srgb",
                     "components": [

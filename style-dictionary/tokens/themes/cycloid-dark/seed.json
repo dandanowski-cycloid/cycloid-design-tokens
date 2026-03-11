@@ -1,0 +1,35 @@
+{
+    "seed": {
+        "color": {
+            "$type": "color",
+            "ui": {
+                "primary": {
+                    "$value": "#576e8e"
+                },
+                "secondary": {
+                    "$value": "#FF00FF"
+                },
+                "tertiary": {
+                    "$value": "#f08b02"
+                },
+                "neutral": {
+                    "$value": "#d2d1d1"
+                }
+            },
+            "feedback": {
+                "success": {
+                    "$value": "#51af45"
+                },
+                "warning": {
+                    "$value": "#fbbc0f"
+                },
+                "error": {
+                    "$value": "#e6213c"
+                },
+                "info": {
+                    "$value": "#1c9797"
+                }
+            }
+        }
+    }
+}
