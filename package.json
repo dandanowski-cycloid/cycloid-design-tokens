@@ -1,21 +1,26 @@
 {
   "name": "cycloid-dt",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
+  "description": "Multi-themed design token pipeline with third-party mappings and Figma export.",
   "author": "Dan Danowski <dan.danowski@cycloid.io>",
   "type": "module",
-  "main": "index.js",
+  "main": "build.js",
   "scripts": {
-    "sd:clean": "npx style-dictionary clean",
-    "sd:build": "node style-dictionary/sd-tokens.build.js",
-    "sd:build:figma": "node style-dictionary/sd-tokens.build.js figma",
-    "sd:build:web": "node style-dictionary/sd-tokens.build.js web"
+    "sd:clean": "node -e \"fs.rmSync('build', {recursive: true, force: true})\"",
+    "sd:build": "node style-dictionary/sd-tokens.build.js --verbose",
+    "sd:build:mappings": "node style-dictionary/sd-tokens.build-mappings.js --verbose",
+    "sd:punch-it": "npm run sd:clean && npm run sd:build && npm run sd:build:mappings"
   },
-  "devDependencies": {
+  "dependencies": {
     "@tokens-studio/sd-transforms": "^2.0.3",
     "culori": "^4.0.2",
     "style-dictionary": "^5.3.3",
     "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

@@ -1,6 +1,7 @@
 import StyleDictionary from 'style-dictionary';
 import { register } from '@tokens-studio/sd-transforms';
 import { figmaVariablesFormat } from './formats/figma-variables.js';
+import { THEMES } from './config/settings.js';
 
 // 1. Register Token Studio transforms
 await register(StyleDictionary);
@@ -11,10 +12,8 @@ StyleDictionary.registerFormat({
     format: figmaVariablesFormat
 });
 
-// Define your themes
-const themes = ['cycloid', 'cycloid-dark'];
-
 const buildTheme = async (theme) => {
+
     console.log(`\n🎨 Building Theme: ${theme}`);
 
     const sd = new StyleDictionary({
@@ -32,12 +31,13 @@ const buildTheme = async (theme) => {
                     'name/kebab'
                 ],
                 buildPath: `build/web/${theme}/`,
+                prefix: "cy",
                 files: [
                     {
                         destination: 'vars-core.css',
                         format: 'css/variables',
                         filter: (token) => ['core'].includes(token.path[0]),
-                        options: { outputReferences: false }
+                        options: { outputReferences: true }
                     },
                     {
                         destination: 'vars-semantic.css',
@@ -80,6 +80,6 @@ const buildTheme = async (theme) => {
 }
 
 // Run the loop
-for (const theme of themes) {
+for (const theme of THEMES) {
     await buildTheme(theme);
 }
