@@ -19,8 +19,8 @@ const buildTheme = async (theme) => {
 
     const sd = new StyleDictionary({
         source: [
-            `style-dictionary/tokens/themes/${theme}/**/*.json`,
             'style-dictionary/tokens/default/**/*.json',
+            `style-dictionary/tokens/themes/${theme}/**/*.json`,
         ],
         preprocessors: ['tokens-studio'],
         platforms: {
