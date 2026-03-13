@@ -1,0 +1,137 @@
+{
+    "semantic": {
+        "color": {
+            "$type": "color",
+            "foreground": {
+                "main": {
+                    "$value": "{core.color.ui.primary.800}",
+                    "$description": "The default color used for text"
+                },
+                "subtle": {
+                    "$value": "{core.color.ui.primary.700}"
+                },
+                "muted": {
+                    "$value": "{core.color.ui.primary.600}"
+                },
+                "emphasized": {
+                    "$value": "{core.color.ui.secondary.700}"
+                },
+                "disabled": {
+                    "$value": "{core.color.ui.neutral.350}"
+                },
+                "inverted": {
+                    "$value": "{core.color.ui.neutral.900}"
+                },
+                "error": {
+                    "$value": "{core.color.feedback.error.500}"
+                },
+                "warning": {
+                    "$value": "{core.color.feedback.warning.400}"
+                },
+                "success": {
+                    "$value": "{core.color.feedback.success.500}"
+                },
+                "info": {
+                    "$value": "{core.color.feedback.info.500}"
+                },
+                "on-emphasized": {
+                    "$value": "{core.color.ui.neutral.900}"
+                }
+            },
+            "background": {
+                "app": {
+                    "$value": "{core.color.ui.neutral.100}"
+                },
+                "main": {
+                    "$value": "{core.color.ui.neutral.200}"
+                },
+                "subtle": {
+                    "$value": "{core.color.ui.primary.250}"
+                },
+                "muted": {
+                    "$value": "{core.color.ui.primary.300}"
+                },
+                "emphasized-muted": {
+                    "$value": "{core.color.ui.secondary.300}"
+                },
+                "emphasized-emphasized": {
+                    "$value": "{core.color.ui.secondary.500}"
+                },
+                "disabled": {
+                    "$value": "{core.color.ui.neutral.700}"
+                },
+                "inverted": {
+                    "$value": "{core.color.ui.primary.500}"
+                },
+                "error-muted": {
+                    "$value": "{core.color.feedback.error.700}"
+                },
+                "error-emphasized": {
+                    "$value": "{core.color.feedback.error.500}"
+                },
+                "warning-muted": {
+                    "$value": "{core.color.feedback.warning.800}"
+                },
+                "warning-emphasized": {
+                    "$value": "{core.color.feedback.warning.500}"
+                },
+                "success-muted": {
+                    "$value": "{core.color.feedback.success.700}"
+                },
+                "success-emphasized": {
+                    "$value": "{core.color.feedback.success.500}"
+                },
+                "info-muted": {
+                    "$value": "{core.color.feedback.info.700}"
+                },
+                "info-emphasized": {
+                    "$value": "{core.color.feedback.info.500}"
+                }
+            },
+            "border": {
+                "main": {
+                    "$value": "{core.color.ui.primary.800}"
+                },
+                "subtle": {
+                    "$value": "{core.color.ui.primary.700}"
+                },
+                "muted": {
+                    "$value": "{core.color.ui.primary.800}"
+                },
+                "emphasized": {
+                    "$value": "{core.color.ui.secondary.500}"
+                },
+                "disabled": {
+                    "$value": "{core.color.ui.neutral.500}"
+                },
+                "inverted": {
+                    "$value": "{core.color.ui.primary.400}"
+                },
+                "error-muted": {
+                    "$value": "{core.color.feedback.error.600}"
+                },
+                "error-emphasized": {
+                    "$value": "{core.color.feedback.error.500}"
+                },
+                "warning-muted": {
+                    "$value": "{core.color.feedback.warning.600}"
+                },
+                "warning-emphasized": {
+                    "$value": "{core.color.feedback.warning.400}"
+                },
+                "success-muted": {
+                    "$value": "{core.color.feedback.success.600}"
+                },
+                "success-emphasized": {
+                    "$value": "{core.color.feedback.success.500}"
+                },
+                "info-muted": {
+                    "$value": "{core.color.feedback.info.700}"
+                },
+                "info-emphasized": {
+                    "$value": "{core.color.feedback.info.500}"
+                }
+            }
+        }
+    }
+}
