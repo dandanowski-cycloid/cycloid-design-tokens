@@ -9,7 +9,7 @@
     "sd:clean": "node -e \"fs.rmSync('build', {recursive: true, force: true})\"",
     "sd:build": "node style-dictionary/sd-tokens.build.js --verbose",
     "sd:build:mappings": "node style-dictionary/sd-tokens.build-mappings.js --verbose",
-    "sd:punch-it": "npm run sd:clean && npm run sd:build && npm run sd:build:mappings"
+    "sd:hit-it": "npm run sd:clean && npm run sd:build && npm run sd:build:mappings"
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^2.0.3",
