@@ -1,6 +1,6 @@
 <style>
   body {
-    font: 12px sans-serif;
+    font: 14px sans-serif;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -8,8 +8,12 @@
     color: #FFF;
   }
 
+  h2 {
+    margin-block-start: 0;
+  }
+
   textarea {
-    height: 340px;
+    height: 320px;
     width: 100%;
     font-family: monospace;
   }
@@ -24,16 +28,17 @@
   }
 </style>
 
-<h2>Tokens Sync</h2>
+<h2>Cycloid Tokens Sync</h2>
 
-<label>Collection Name:</label>
+<label for="col-name">Collection Name:</label>
 <input id="col-name" type="text" value="Design Tokens">
 
-<label>Mode Name (e.g., Light, Dark):</label>
+<label for="mode-name">Mode Name (e.g., Light, Dark):</label>
 <input id="mode-name" type="text" value="Value">
 
+<label for="json-input">JSON Input:</label>
 <textarea id="json-input"></textarea>
-<button id="sync-btn">Sync Mode</button>
+<button id="sync-btn">Sync Tokens</button>
 
 <script>
   document.getElementById('sync-btn').onclick = () => {
