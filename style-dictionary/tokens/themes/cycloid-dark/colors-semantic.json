@@ -40,10 +40,10 @@
             },
             "background": {
                 "app": {
-                    "$value": "{core.color.ui.neutral.100}"
+                    "$value": "{core.color.ui.primary.100}"
                 },
                 "main": {
-                    "$value": "{core.color.ui.neutral.200}"
+                    "$value": "{core.color.ui.primary.200}"
                 },
                 "subtle": {
                     "$value": "{core.color.ui.primary.250}"
@@ -90,10 +90,10 @@
             },
             "border": {
                 "main": {
-                    "$value": "{core.color.ui.primary.800}"
+                    "$value": "{core.color.ui.primary.300}"
                 },
                 "subtle": {
-                    "$value": "{core.color.ui.primary.700}"
+                    "$value": "{core.color.ui.primary.400}"
                 },
                 "muted": {
                     "$value": "{core.color.ui.primary.800}"

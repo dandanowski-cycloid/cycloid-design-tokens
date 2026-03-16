@@ -12,6 +12,13 @@ StyleDictionary.registerFormat({
     format: figmaVariablesFormat
 });
 
+StyleDictionary.registerFormat({
+    name: 'json/nested-tokens-studio',
+    format: function ({ dictionary }) {
+        return JSON.stringify(dictionary.tokens, null, 2);
+    }
+});
+
 const buildTheme = async (theme) => {
 
     console.log(`\n🎨 Building Theme: ${theme}`);
@@ -31,13 +38,12 @@ const buildTheme = async (theme) => {
                     'name/kebab'
                 ],
                 buildPath: `build/web/${theme}/`,
-                prefix: "cy",
                 files: [
                     {
                         destination: 'vars-core.css',
                         format: 'css/variables',
                         filter: (token) => ['core'].includes(token.path[0]),
-                        options: { outputReferences: true }
+                        options: { outputReferences: false }
                     },
                     {
                         destination: 'vars-semantic.css',
@@ -69,8 +75,39 @@ const buildTheme = async (theme) => {
                 buildPath: 'build/figma/',
                 files: [
                     {
-                        destination: `${theme}.tokens.json`,
-                        format: 'json/figma-variables'
+                        destination: `core/${theme}.tokens.json`,
+                        format: 'json/figma-variables',
+                        filter: (token) => ['core'].includes(token.path[0]),
+                        options: { outputReferences: true }
+                    },
+                    {
+                        destination: `semantic/${theme}.tokens.json`,
+                        format: 'json/figma-variables',
+                        filter: (token) => ['semantic'].includes(token.path[0]),
+                        options: { outputReferences: true }
+                    }
+                ]
+            },
+            tokensStudio: {
+                transforms: [
+                    'ts/descriptionToComment',
+                    'ts/size/px',
+                    'ts/color/modifiers',
+                    'name/kebab'
+                ],
+                buildPath: 'build/tokens-studio/',
+                files: [
+                    {
+                        destination: `core/${theme}.tokens.json`,
+                        format: 'json/nested-tokens-studio',
+                        filter: (token) => ['core'].includes(token.path[0]),
+                        options: { outputReferences: true }
+                    },
+                    {
+                        destination: `semantic/${theme}.tokens.json`,
+                        format: 'json/nested-tokens-studio',
+                        filter: (token) => ['semantic'].includes(token.path[0]),
+                        options: { outputReferences: true }
                     }
                 ]
             }
