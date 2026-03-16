@@ -1,0 +1,53 @@
+<style>
+  body {
+    font: 12px sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+  }
+
+  textarea {
+    height: 340px;
+    width: 100%;
+    font-family: monospace;
+  }
+
+  button {
+    background: #18A0FB;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<h2>Tokens Sync</h2>
+
+<label>Collection Name:</label>
+<input id="col-name" type="text" value="Design Tokens">
+
+<label>Mode Name (e.g., Light, Dark):</label>
+<input id="mode-name" type="text" value="Value">
+
+<textarea id="json-input"></textarea>
+<button id="sync-btn">Sync Mode</button>
+
+<script>
+  document.getElementById('sync-btn').onclick = () => {
+    const data = JSON.parse(document.getElementById('json-input').value);
+    const collectionName = document.getElementById('col-name').value;
+    const modeName = document.getElementById('mode-name').value;
+
+    parent.postMessage({
+      pluginMessage: {
+        type: 'sync-tokens',
+        data,
+        collectionName,
+        modeName
+      }
+    }, '*');
+  };
+</script>

@@ -1,2 +1,7 @@
 node_modules
 build
+
+# figma plugin
+figma-plugin/out
+figma-plugin/dist
+figma-plugin/code.js

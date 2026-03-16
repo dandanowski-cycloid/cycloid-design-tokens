@@ -87,29 +87,6 @@ const buildTheme = async (theme) => {
                         options: { outputReferences: true }
                     }
                 ]
-            },
-            tokensStudio: {
-                transforms: [
-                    'ts/descriptionToComment',
-                    'ts/size/px',
-                    'ts/color/modifiers',
-                    'name/kebab'
-                ],
-                buildPath: 'build/tokens-studio/',
-                files: [
-                    {
-                        destination: `core/${theme}.tokens.json`,
-                        format: 'json/nested-tokens-studio',
-                        filter: (token) => ['core'].includes(token.path[0]),
-                        options: { outputReferences: true }
-                    },
-                    {
-                        destination: `semantic/${theme}.tokens.json`,
-                        format: 'json/nested-tokens-studio',
-                        filter: (token) => ['semantic'].includes(token.path[0]),
-                        options: { outputReferences: true }
-                    }
-                ]
             }
         }
     });

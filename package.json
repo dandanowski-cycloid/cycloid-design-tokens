@@ -9,7 +9,11 @@
     "sd:clean": "node -e \"fs.rmSync('build', {recursive: true, force: true})\"",
     "sd:build": "node style-dictionary/sd-tokens.build.js --verbose",
     "sd:build:mappings": "node style-dictionary/sd-tokens.build-mappings.js --verbose",
-    "sd:hit-it": "npm run sd:clean && npm run sd:build && npm run sd:build:mappings"
+    "sd:hit-it": "npm run sd:clean && npm run sd:build && npm run sd:build:mappings",
+    "fp:build": "tsc -p figma-plugin/tsconfig.json",
+    "fp:lint": "eslint --ext .ts,.tsx --ignore-pattern node_modules .",
+    "fp:lint:fix": "eslint --ext .ts,.tsx --ignore-pattern node_modules --fix .",
+    "fp:watch": "npm run fp:build -- --watch"
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^2.0.3",
@@ -18,9 +22,55 @@
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "@figma/eslint-plugin-figma-plugins": "*",
+    "@figma/plugin-typings": "^1.123.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "es2022": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx"
+        ],
+        "extends": [
+          "plugin:@typescript-eslint/recommended",
+          "plugin:@figma/figma-plugins/recommended"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+          "project": "./figma-plugin/tsconfig.json"
+        },
+        "rules": {
+          "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+              "argsIgnorePattern": "^_",
+              "varsIgnorePattern": "^_",
+              "caughtErrorsIgnorePattern": "^_"
+            }
+          ]
+        }
+      }
+    ]
   }
 }
